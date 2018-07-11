@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zoU-1l-WaA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oaT-jC-8qz">
+                                <rect key="frame" x="16" y="131" width="151" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="OaL-S4-5oN"/>
+                                    <constraint firstAttribute="height" constant="81" id="vXr-bE-vxB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-GA-FBa">
+                                <rect key="frame" x="20" y="258" width="147" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="TEq-l0-BBb"/>
+                                    <constraint firstAttribute="height" constant="81" id="b3q-LI-oFx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-ej-zPI">
+                                <rect key="frame" x="48" y="220" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D97-9e-NBK"/>
+                                    <constraint firstAttribute="width" constant="77" id="ivt-ix-ctC"/>
+                                </constraints>
+                                <state key="normal" title="普通的圆角"/>
+                                <connections>
+                                    <action selector="RoundedCornersAction1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kB5-aV-70L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-nj-gyW">
+                                <rect key="frame" x="53" y="354" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yno-4N-Ugu"/>
+                                    <constraint firstAttribute="width" constant="77" id="meF-74-VMS"/>
+                                </constraints>
+                                <state key="normal" title="特殊的圆角"/>
+                                <connections>
+                                    <action selector="RoundedCornersAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqe-zp-hfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-0k-WuU">
+                                <rect key="frame" x="145" y="220" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FXg-yt-9UD"/>
+                                    <constraint firstAttribute="width" constant="146" id="v9s-zo-8fV"/>
+                                </constraints>
+                                <state key="normal" title="添加阴影效果"/>
+                                <connections>
+                                    <action selector="AddShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="od0-Qf-L9D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS6-lN-YbV">
+                                <rect key="frame" x="159" y="354" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="0AE-Vz-FIN"/>
+                                    <constraint firstAttribute="height" constant="30" id="dWN-jc-C32"/>
+                                </constraints>
+                                <state key="normal" title="CAShapeLayer绘图"/>
+                                <connections>
+                                    <action selector="CASharpeLayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bST-Eg-5fn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6W-OE-SqY">
+                                <rect key="frame" x="20" y="419" width="155" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="6iS-kR-5UT"/>
+                                    <constraint firstAttribute="height" constant="47" id="v2p-nN-xl7"/>
+                                </constraints>
+                                <state key="normal" title="iOS UI帧率的检测工具"/>
+                                <connections>
+                                    <action selector="pushYYFPSVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifH-PM-Cu5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hbd-GA-FBa" firstAttribute="top" secondItem="gdc-ej-zPI" secondAttribute="bottom" constant="8" id="8dD-5p-0ic"/>
+                            <constraint firstItem="cS6-lN-YbV" firstAttribute="leading" secondItem="Cih-nj-gyW" secondAttribute="trailing" constant="29" id="8eX-Of-yTW"/>
+                            <constraint firstItem="Cih-nj-gyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="8xO-lf-5sf"/>
+                            <constraint firstItem="gdc-ej-zPI" firstAttribute="top" secondItem="oaT-jC-8qz" secondAttribute="bottom" constant="8" id="DAl-Ld-3XJ"/>
+                            <constraint firstItem="iqE-0k-WuU" firstAttribute="leading" secondItem="gdc-ej-zPI" secondAttribute="trailing" constant="20" id="DJr-zh-BWO"/>
+                            <constraint firstItem="W6W-OE-SqY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DdN-f5-qZB"/>
+                            <constraint firstItem="cS6-lN-YbV" firstAttribute="top" secondItem="hbd-GA-FBa" secondAttribute="bottom" constant="15" id="EG9-us-6O5"/>
+                            <constraint firstItem="oaT-jC-8qz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lro-KI-e5m"/>
+                            <constraint firstItem="W6W-OE-SqY" firstAttribute="top" secondItem="Cih-nj-gyW" secondAttribute="bottom" constant="35" id="MxE-qZ-Hp3"/>
+                            <constraint firstItem="Cih-nj-gyW" firstAttribute="top" secondItem="hbd-GA-FBa" secondAttribute="bottom" constant="15" id="So9-gI-1d7"/>
+                            <constraint firstItem="hbd-GA-FBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tms-Tl-z6p"/>
+                            <constraint firstItem="oaT-jC-8qz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="W4h-8m-O8N"/>
+                            <constraint firstItem="iqE-0k-WuU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="aa3-5j-65y"/>
+                            <constraint firstItem="gdc-ej-zPI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="h8B-4d-1ke"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oOG-1o-xWh"/>
+                    <connections>
+                        <outlet property="myImage" destination="oaT-jC-8qz" id="Kis-hU-gte"/>
+                        <outlet property="myImage2" destination="hbd-GA-FBa" id="gPV-bb-mY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="33.733133433283363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lmA-P9-g0X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zoU-1l-WaA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vKY-vt-DTL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gX8-oz-UCf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyE-Li-i26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2.png" width="108" height="59"/>
+    </resources>
+</document>
